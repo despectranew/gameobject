@@ -42,21 +42,7 @@ public class World {
     }
 
     public void nextTick() {
-        for (var el: gameObjects) {
-            if (el instanceof MovingGameObject) {
-                ((MovingGameObject) el).move();
-            }
-        }
-        ArrayList<GameObject> goForDelete = new ArrayList<>();
-        for (var eli: gameObjects) {
-            for (var elj: gameObjects) {
-                if (eli != elj) {
-                    if (getDistance(eli, elj) < eli.getRadius() + elj.getRadius()) {
-                        if (eli instanceof Bullet)
-                    }
-                }
-            }
-        }
+
     }
 
 
